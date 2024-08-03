@@ -75,7 +75,7 @@ function Skills() {
             </div>
             <div className="IconWrapper">
               <img src={DjangoRest} alt="Django Rest Framework"/>
-              <p>Django Rest Framework</p>
+              <p>Django Rest</p>
             </div>
           </div>
         </div>

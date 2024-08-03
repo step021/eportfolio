@@ -2,41 +2,34 @@
     text-align: center;
     background-color: white;
     justify-content: center;
-    color:black;
+    color: black;
     min-height: 90vh;
     transition: background-color 0.3s ease, color 0.3s ease;
-    padding-bottom:60px;
-}
-.SkillsTitle {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    padding-bottom: 60px;
 }
 
 body.dark-mode .SkillsContainer {
     background-color: #121212;
-    color:white;
+    color: white;
 }
 
-  
-  /* Apply to the SkillsSection for each group */
+.SkillsTitle {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
 .SkillsSection1 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    color:rgb(99, 98, 98);
+    margin-top:20px;
 }
-
+/* Skills Sections */
+.SkillsSection1,
 .SkillsSection2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    color:rgb(99, 98, 98);
+    color: rgb(99, 98, 98);
 }
 
-body.dark-mode .SkillsSection1 {
-    color: rgb(161, 158, 158);
-}
+body.dark-mode .SkillsSection1,
 body.dark-mode .SkillsSection2 {
     color: rgb(161, 158, 158);
 }
@@ -44,23 +37,27 @@ body.dark-mode .SkillsSection2 {
 .SkillGroup {
     display: flex;
     flex-direction: column;
-    align-items: left; 
+    align-items: flex-start;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
     border: 3px solid #03e4cd; /* Aqua border */
     box-shadow: 0 0 10px #03e4cd;
-    max-width: 570px;
+    max-width: 600px;
     min-height: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.body-dark-mode .SkillGroup {
+body.dark-mode .SkillGroup {
     border: 3px solid #03DAC6; /* Dark Aqua border */
     box-shadow: 0 0 10px #03DAC6;
 }
+
+
+/* Icons and Wrappers */
 .Icons {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
     margin-top: 30px;
@@ -69,50 +66,47 @@ body.dark-mode .SkillsSection2 {
 .IconWrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 170px;
     text-align: center;
     border: 1px solid rgb(99, 98, 98); 
     box-shadow: 0 0 10px rgb(99, 98, 98);
     border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.body-dark-mode .IconWrapper {
+body.dark-mode .IconWrapper {
     border: 1px solid rgb(161, 158, 158); 
     box-shadow: 0 0 10px rgb(161, 158, 158);
 }
 
-
-
-
 .IconWrapper:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ease;
 }
 
 
 
-
-
-.Icons img {
-    margin: 5px;
-    width: 50px; /* Adjust size as needed */
-    height: auto;
-}
-
+/* Icon and Social Image Styling */
+.Icons img,
 .social {
     margin: 5px;
     width: 50px; /* Adjust size as needed */
     height: auto;
 }
 
-@media screen and (max-width: 360px) {
+/* Responsive Adjustments */
+@media screen and (max-width: 400px) {
     .SkillGroup {
-        max-width: 300px;
+        max-width: 320px;
     }
-    .Icons img {
-        width: 20px; /* Adjust size as needed */
+    .IconWrapper {
+        width: 120px;
+        font-size: 0.8rem;
+        margin-right: 0px;
+
     }
+    .Icons img,
     .social {
-        width: 20px; /* Adjust size as needed */
+        width: 40px;
     }
 }

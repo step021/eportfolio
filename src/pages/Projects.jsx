@@ -32,7 +32,7 @@ function Projects() {
       description: 'This project is a personal eportfolio that showcases my projects, skills, and so much more. The eportfolio uses React to display the data and allow the user to interact with the data. The eportfolio uses HTML and CSS to style the data and make it visually appealing.',
     },
     {
-      title: 'Financial Literacy/Analysis Web App',
+      title: 'Financial Analysis Web App',
       image: Stocks,
       skills: ['React.js', 'HTML', 'CSS', 'Python', 'Django', 'DjangoRest', 'Finance'],
       categories: ['Economics', 'Web Applications'],

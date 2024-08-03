@@ -2,17 +2,17 @@
     text-align: center;
     background-color: white;
     justify-content: center;
-    color:black;
+    color: black;
     min-height: 90vh;
     transition: background-color 0.3s ease, color 0.3s ease;
-    padding-bottom:60px;
+    padding-bottom: 60px;
     padding-left: 100px;
     padding-right: 100px;
 }
 
 body.dark-mode .ExperienceContainer {
     background-color: #121212;
-    color:white;
+    color: white;
 }
 
 .ExperienceTitle {
@@ -25,9 +25,9 @@ body.dark-mode .ExperienceContainer {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
-    color:rgb(99, 98, 98);
     align-items: center;
     padding: 0;
+    color: rgb(99, 98, 98);
 }
 
 body.dark-mode .ExperienceSection {
@@ -36,66 +36,35 @@ body.dark-mode .ExperienceSection {
 
 .ExperienceWrapper {
     display: flex;
-    color:rgb(99, 98, 98);
     flex-wrap: wrap;
     align-items: center;
     padding: 0;
+    color: rgb(99, 98, 98);
     text-decoration: none;
-
 }
 
 body.dark-mode .ExperienceWrapper {
     color: rgb(161, 158, 158);
 }
 
-
 .Experience {
-    border: 3px solid #03e4cd; /* Aqua border */
+    border: 3px solid #03e4cd;
     box-shadow: 0 0 10px #03e4cd;
-    max-width: 400px;
-    min-width:400px;
-    min-height:400px;
+    max-width: 500px;
+    width: 100%;
+    min-height: 400px;
+    height: 610px;
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-decoration: none;
     cursor: pointer;
-}
-.Experience:hover {
-    transform: scale(1.05);
     transition: transform 0.3s ease;
 }
 
-.SkillsInvolvedWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top:20px
-}
-.SkillsInvolvedWrapper h3 {
-    margin-right:30px;
-}
-.SkillsInvolved1 {
-    margin-bottom: 10px;
-    color:#03e4cd;
-    display:flex;
-    flex-wrap:wrap;
-    max-width: 300px;
-}
-
-body.dark-mode .SkillsInvolved1 {
-    color: #03DAC6;
-}
-.SkillsInvolved1 h3 {
-    margin-right:10px;
-}
-
-.Experience a {
-    text-decoration: none;
-    color:rgb(99, 98, 98);
-}
-body.dark-mode .Experience a {
-    color: rgb(161, 158, 158);
+.Experience:hover {
+    transform: scale(1.05);
 }
 
 body.dark-mode .Experience {
@@ -106,6 +75,7 @@ body.dark-mode .Experience {
 .Experience h3 {
     margin-bottom: 10px;
 }
+
 .Experience h2 {
     margin-bottom: 20px;
     font-size: 1.8rem;
@@ -115,11 +85,87 @@ body.dark-mode .Experience {
     margin-bottom: 10px;
 }
 
-@media (max-width: 440px) {
-    .Experience {
-        max-width: 300px;
-        min-width:300px;
+.SkillsInvolvedWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.SkillsInvolvedWrapper h3 {
+    margin-right: 30px;
+}
+
+.SkillsInvolved1 {
+    margin-bottom: 10px;
+    color: #03e4cd;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+    font-size: 0.7rem;
+}
+
+body.dark-mode .SkillsInvolved1 {
+    color: #03DAC6;
+}
+
+.SkillsInvolved1 h3 {
+    margin-right: 10px;
+}
+
+.Experience a {
+    text-decoration: none;
+    color: rgb(99, 98, 98);
+}
+
+body.dark-mode .Experience a {
+    color: rgb(161, 158, 158);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .ExperienceContainer {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
-    
+    .ExperienceTitle {
+        font-size: 2.5rem;
+    }
+
+    .Experience {
+        max-width: 350px;
+        min-height: 350px;
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .Experience h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .ExperienceContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .Experience {
+        max-width: 300px;
+        min-width: 300px;
+        min-height: 300px;
+        font-size: 0.9rem;
+    }
+
+    .Experience h2 {
+        font-size: 1.3rem;
+    }
+
+    .Experience p {
+        font-size: 0.8rem;
+    }
+
+    .SkillsInvolved1 {
+        max-width: 100%;
+    }
 }

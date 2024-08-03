@@ -2,17 +2,17 @@
     text-align: center;
     background-color: white;
     justify-content: center;
-    color:black;
+    color: black;
     min-height: 90vh;
     transition: background-color 0.3s ease, color 0.3s ease;
-    padding-bottom:60px;
+    padding-bottom: 60px;
     padding-left: 100px;
     padding-right: 100px;
 }
 
 body.dark-mode .EducationContainer {
     background-color: #121212;
-    color:white;
+    color: white;
 }
 
 .EducationTitle {
@@ -25,20 +25,21 @@ body.dark-mode .EducationContainer {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
-    color:rgb(99, 98, 98);
     align-items: center;
     padding: 0;
+    color: rgb(99, 98, 98);
 }
+
 body.dark-mode .EducationSection {
     color: rgb(161, 158, 158);
 }
 
 .EducationWrapper {
     display: flex;
-    color:rgb(99, 98, 98);
     flex-wrap: wrap;
     align-items: center;
     padding: 0;
+    color: rgb(99, 98, 98);
     text-decoration: none;
 }
 
@@ -47,24 +48,22 @@ body.dark-mode .EducationWrapper {
 }
 
 .Education {
-    border: 3px solid #03e4cd; /* Aqua border */
+    border: 3px solid #03e4cd;
     box-shadow: 0 0 10px #03e4cd;
     max-width: 700px;
-    min-width:auto;
-    min-height:200px;
-    height:auto;
+    width: 100%;
+    min-height: 200px;
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
-    font-size: 0.8rem;
-    text-decoration: none;
+    font-size: 1rem;
     cursor: pointer;
     text-align: left;
+    transition: transform 0.3s ease;
 }
 
 .Education:hover {
     transform: scale(1.05);
-    transition: transform 0.3s ease;
 }
 
 .EducationImage {
@@ -72,20 +71,70 @@ body.dark-mode .EducationWrapper {
     align-items: center;
     margin-bottom: 20px;
 }
+
 .EducationImage img {
-    width: 50px; /* Adjust size as needed */
+    width: 50px;
     margin-right: 20px;
 }
 
 .EducationImageOverlay {
-    align-items: left;
     text-align: left;
 }
 
 .EducationImageOverlay h3 {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .Education p {
     margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 920px) {
+    .EducationContainer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .EducationTitle {
+        font-size: 2.5rem;
+    }
+
+    .Education {
+        max-width: 600px;
+        margin: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .EducationContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .Education {
+        max-width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .EducationImage img {
+        width: 40px;
+    }
+
+    .EducationImageOverlay h3 {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .EducationImage img {
+        width: 30px;
+    }
+
+    .EducationImageOverlay h3 {
+        font-size: 0.8rem;
+    }
 }

@@ -47,7 +47,7 @@ function Experience() {
             <h2>Sales Associate</h2>
             <h3>June 2022 - August 2022</h3>
             <h3>Company: Foot Locker</h3>
-            <p>Sold shoes to customers and dealt with inventory organization</p>
+            <p>Sold shoes to customers and dealt with inventory organization.</p>
             <div className='SkillsInvolvedWrapper'>
               <h3>Skills:</h3>
               <div className='SkillsInvolved1'>
