@@ -28,7 +28,7 @@ function Projects() {
       image: react,
       skills: ['React.js', 'HTML', 'CSS'],
       categories: ['Web Applications'],
-      link: 'https://github.com/step021/Eportfolio-Sebastian-Stephens',
+      link: 'https://github.com/step021/eportfolio',
       description: 'This project is a personal eportfolio that showcases my projects, skills, and so much more. The eportfolio uses React to display the data and allow the user to interact with the data. The eportfolio uses HTML and CSS to style the data and make it visually appealing.',
     },
     {
@@ -54,14 +54,6 @@ function Projects() {
       categories: ['AI/ML', 'Web Applications'],
       description: 'This project is a web application that teaches data structures and algorithms. The application uses a Django backend and a React frontend. The backend uses Django Rest Framework to communicate with the frontend. The frontend uses React to display the data and allow the user to interact with the data. The application uses Pandas and Numpy to manipulate the data and perform calculations. The application uses machine learning and artificial intelligence concepts to teach the user about data structures and algorithms.',
       link: 'https://github.com/step021/DSandAlgsApp',
-    },
-    {
-      title: 'Frogger Game Android Application',
-      image: Frogger,
-      skills: ['Java', 'Android Studio', 'Agile'],
-      categories: ['All'],
-      description: 'This project is an Android application that is a clone of the classic game Frogger. This application was created in a team of 5 people using agile methodologies and a test-driven development approach. It is programmed in Java and uses Android Studio to create the application.',
-      link: 'http://www.github.com/step021',
     },
     {
       title: 'Weather App',

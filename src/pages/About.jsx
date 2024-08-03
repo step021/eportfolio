@@ -11,7 +11,7 @@ function About() {
         </div>
         <div className="Description">
           <p>
-          I am a student at the Georgia Institute of Technology pursuing a BS in Computer Science, specializing in Artificial Intelligence and Information/Internetworks. I have experience in full stack development in many languages such as Python, Java, and JavaScript.  I enjoy projects related to my passions in Machine Learning, data analysis, and economics. I am actively seeking full-time positions in software engineering and data analytics roles, where I can leverage my skills and interests in these areas.
+          I am a student at the Georgia Institute of Technology pursuing a BS in Computer Science, specializing in Artificial Intelligence and Information/Internetworks. I have experience in full stack development in many languages such as Python, Java, and JavaScript.  I enjoy projects related to my passions in Machine Learning, Data Analysis, and Economics. I am actively seeking full-time positions in software engineering and data analytics roles, where I can leverage my skills and interests in these areas.
           </p>
         </div>
         <div className="Resume">

@@ -21,7 +21,6 @@ function Experience() {
                 <h3>Chain Ladder</h3>
                 <h3>Loss Reserving</h3>
                 <h3>Actuarial Science</h3>
-                <h3>Django Rest Framework</h3>
               </div>
             </div>
           </div>
