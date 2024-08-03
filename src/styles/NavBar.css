@@ -1,0 +1,206 @@
+.NavBar {
+    display: flex;
+    align-items: center;
+    color: black;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    font: Arial, sans-serif;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .NavBar {
+    background-color: #121212;
+    color: white;
+    opacity: 1;
+}
+
+.Title {
+    margin-left: 30px;
+    flex-shrink: 0; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.Sections {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink:0;
+}
+.Sections a{
+    margin-left: 20px;
+    text-decoration: none;
+    flex-shrink: 0; 
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.Sections a:last-child {
+    margin-right: 20px;
+}
+.Sections a:hover {
+    color: #03e4cd;
+}
+body.dark-mode .Sections a:hover {
+    color: #03DAC6;
+}
+
+
+.External {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right:10px;
+    color:black;
+    flex-wrap: wrap;
+}
+.External a {
+    margin-right: 20px;
+    text-decoration: none;
+    flex-shrink: 0; 
+    cursor: pointer;
+    font-size: 2rem;
+    color:black;
+}
+body.dark-mode .External a {
+    color:#ffff;
+}
+.External a:hover {
+    color: #03e4cd;
+}
+body.dark-mode .External a:hover {
+    color: #03DAC6;
+}
+.External .Theme-Button {
+    margin-right: 20px;
+    flex-shrink: 0; 
+    cursor: pointer;
+    font-size: 2rem;
+    color:black;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-width: 0;
+}
+body.dark-mode .External .Theme-Button {
+    background-color: #121212;
+    color: #ffff;
+}
+.External .Theme-Button:hover {
+    color: #03e4cd;
+}
+body.dark-mode .External .Theme-Button:hover {
+    color: #03DAC6;
+}
+
+
+.Menu {
+    display: none;
+}
+.Dropdown {
+    display:none;
+}
+.none {
+    display: none;
+}
+
+
+@media (max-width: 920px) {
+    .NavBar {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    .Menu {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color:black;
+        font-size: 3rem;
+        margin-right: 30px;
+    }
+
+    body.dark-mode .Menu {
+        color: white;
+    }
+    .Menu:hover {
+        color: #03e4cd;
+    }
+    body.dark-mode .Menu:hover{
+        color: #03DAC6;
+    }
+    .External {
+        display: none;
+    }
+
+    .Sections {
+        display: none;
+    }
+
+    .Dropdown {
+        position: absolute; /* Position relative to the NavBar or another parent */
+        top: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 100%;     
+        color:black;
+        font-size: 1.2rem;
+        margin: 0; /* Removes any default margin */
+        background-color: rgba(255, 255, 255, 0.7);
+        border-bottom-left-radius: 20px; /* Rounds the bottom left corner */
+        border-bottom-right-radius: 20px;
+        
+    }
+    .Dropdown:hover {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    }
+    .Dropdown a {
+        margin-top:15px;
+        align-items: start;
+        cursor: pointer;
+        margin-left:20px;
+    }
+    .Dropdown a:last-child {
+        margin-bottom: 15px;
+        flex-shrink: 0; 
+        cursor: pointer;
+        font-size: 1.2rem;
+        color:black;
+        text-decoration: none;
+    }
+    
+
+    body.dark-mode .Dropdown {
+        background-color: rgba(18, 18, 18, 0.8);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        color: white;
+    }
+
+    body.dark-mode .Dropdown a {
+        color: white;
+    }
+    .Dropdown a:hover {
+        color: #03e4cd;
+    }
+
+    body.dark-mode .Dropdown a:hover {
+        color: #03DAC6;
+    }
+
+    .none {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Title {
+        font-size:0.7rem
+    }
+    
+}

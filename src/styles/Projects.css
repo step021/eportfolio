@@ -1,0 +1,250 @@
+.ProjectsContainer {
+    text-align: center;
+    background-color: white;
+    justify-content: center;
+    color:black;
+    min-height: 90vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding-bottom:60px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+body.dark-mode .ProjectsContainer {
+    background-color: #121212;
+    color:white;
+}
+
+.ProjectsTitle {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.Mission {
+    font-size: 2rem;
+    
+}
+.Mission1 {
+    font-size: 2rem;
+    color: #03e4cd;
+}
+body.dark-mode .Mission1 {
+    color: #03DAC6;
+}
+
+.ProjectsSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    color:rgb(99, 98, 98);
+    align-items: center;
+    padding: 0;
+}
+
+body.dark-mode .ProjectsSection {
+    color: rgb(161, 158, 158);
+}
+
+.Project {
+    border: 3px solid #03e4cd; /* Aqua border */
+    box-shadow: 0 0 10px #03e4cd;
+    max-width: 280px;
+    min-width:280px;
+    min-height: 350px;
+    max-height:350px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body.dark-mode .Project {
+    border: 3px solid #03DAC6; /* Dark Aqua border */
+    box-shadow: 0 0 10px #03DAC6;
+}
+
+.Project img{
+    width: 270px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.SkillsInvolved {
+    display:flex;
+    justify-content: center;
+    max-width: 280px;
+    flex-wrap: wrap;
+    color:#03e4cd;
+    margin-bottom: 20px;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.SkillsInvolved h3 {
+    margin-right: 10px;
+}
+
+.MenuBar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.MenuBar button {
+    background-image: linear-gradient(45deg, #03DAC6, #03e4cd);
+    color: #F0F0F0; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+body.dark-mode .MenuBar button {
+    background-image: linear-gradient(45deg, #03DAC6, #018786); /* Dark Aqua background color */
+}
+
+.desc{
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 100px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit the number of lines */
+    -webkit-box-orient: vertical; /* Set the box orientation to vertical */
+    line-clamp: 3; /* Standard property for line clamp */
+}
+
+.Project:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.ExpandedProject {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+  }
+  .ExpandedProjectContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    min-height: 90%;
+    max-height: 90%;
+    text-align: center;
+    position: relative;
+    color:rgb(99, 98, 98);
+    overflow-y: auto;
+  }
+
+body.dark-mode .ExpandedProjectContent{
+    background-color: #121212;
+    color: rgb(161, 158, 158);
+}
+
+  .ExpandedProjectContent img {
+    margin-top: 20px;
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .ExpandedProjectContent .SkillsInvolved {
+    display:flex;
+    max-width: 700px;
+    justify-content: center;
+    flex-wrap: wrap;
+    color:#03e4cd;
+  }
+
+body.dark-mode .ExpandedProjectContent .SkillsInvolved {
+    color: #03DAC6;
+}
+  
+  .ExpandedProjectContent h2 {
+    margin-bottom: 20px;
+  }
+  .ExpandedProjectContent p {
+    margin-bottom: 50px;
+    max-width: 700px;
+  }
+  
+  .ExpandedProjectContent button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+body.dark-mode .ExpandedProjectContent button {
+    color: #fff;
+}
+
+.ExpandedProject a{
+    text-decoration: none;
+    background-image: linear-gradient(45deg, #03DAC6, #03e4cd);
+    color: #F0F0F0; /* White text color */
+    border-radius: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+}
+
+body.dark-mode .ExpandedProject a {
+    background-image: linear-gradient(45deg, #03DAC6, #018786); /* Dark Aqua background color */
+}
+
+
+
+.no-scroll {
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .ExpandedProjectContent img {
+        margin-top: 20px;
+        width: 300px;
+        height: 250px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .ProjectsContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .ProjectsTitle {
+        font-size: 3rem;
+    }
+    .Mission1 {
+        font-size: 1.5rem;
+    }
+    .Mission {
+        font-size: 1.5rem;
+    }
+    .MenuBar button {
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
+   
+}

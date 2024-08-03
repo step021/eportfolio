@@ -1,0 +1,125 @@
+.ExperienceContainer {
+    text-align: center;
+    background-color: white;
+    justify-content: center;
+    color:black;
+    min-height: 90vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding-bottom:60px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+body.dark-mode .ExperienceContainer {
+    background-color: #121212;
+    color:white;
+}
+
+.ExperienceTitle {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.ExperienceSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    color:rgb(99, 98, 98);
+    align-items: center;
+    padding: 0;
+}
+
+body.dark-mode .ExperienceSection {
+    color: rgb(161, 158, 158);
+}
+
+.ExperienceWrapper {
+    display: flex;
+    color:rgb(99, 98, 98);
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    text-decoration: none;
+}
+
+body.dark-mode .ExperienceWrapper {
+    color: rgb(161, 158, 158);
+}
+
+
+.Experience {
+    border: 3px solid #03e4cd; /* Aqua border */
+    box-shadow: 0 0 10px #03e4cd;
+    max-width: 400px;
+    min-width:400px;
+    min-height:400px;
+    height:auto;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.Experience:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.SkillsInvolvedWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:20px
+}
+.SkillsInvolvedWrapper h3 {
+    margin-right:30px;
+}
+.SkillsInvolved1 {
+    margin-bottom: 10px;
+    color:#03e4cd;
+    display:flex;
+    flex-wrap:wrap;
+    max-width: 300px;
+}
+
+body.dark-mode .SkillsInvolved1 {
+    color: #03DAC6;
+}
+.SkillsInvolved1 h3 {
+    margin-right:10px;
+}
+
+.Experience a {
+    text-decoration: none;
+    color:rgb(99, 98, 98);
+}
+body.dark-mode .Experience a {
+    color: rgb(161, 158, 158);
+}
+
+body.dark-mode .Experience {
+    border: 3px solid #03DAC6;
+    box-shadow: 0 0 10px #03DAC6;
+}
+
+.Experience h3 {
+    margin-bottom: 10px;
+}
+.Experience h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.Experience p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 440px) {
+    .Experience {
+        max-width: 300px;
+        min-width:300px;
+    }
+
+    
+}

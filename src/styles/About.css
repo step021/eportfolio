@@ -1,0 +1,142 @@
+.AboutContainer {
+    display: flex;
+    color: black;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh; /* Minimum height of 100% of the viewport height */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding-bottom:50px;
+}
+body.dark-mode .AboutContainer {
+    background-color: #121212;
+    color: white;
+}
+.About {
+    margin-right:150px;
+    margin-left:30px;
+    text-decoration: none;
+}
+.AboutHeader {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.AboutIntro {
+    color:black;
+}
+body.dark-mode .AboutIntro {
+    color:white;
+}
+.AboutName {
+    color: #03e4cd;
+}
+body.dark-mode .AboutName {
+    color: #03DAC6;
+}
+
+.Description {
+    max-width: 500px; /* Limit the width of the description */
+    line-height: 1.6; /* Improve readability with increased line height */
+    font-size: 1.3rem;
+    color:rgb(99, 98, 98);
+}
+body.dark-mode .Description {
+    color: rgb(161, 158, 158);
+}
+.Resume {
+    margin-top: 30px; /* Space above the button */
+}
+
+.ResumeButton {
+    background-image: linear-gradient(45deg, #03DAC6, #03e4cd); /* Aqua background color */
+    color: #F0F0F0; /* White text color */
+    border: none; /* Remove default border */
+    padding: 15px 70px; /* Padding inside the button */
+    font-weight: bold; /* Bold text */
+    font-size: 1.3rem;
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none ;
+    display: inline-block; /* Make sure it acts like a button */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .ResumeButton {
+    background-image: linear-gradient(45deg, #03DAC6, #018786); /* Dark Aqua background color */
+}
+
+.Profile img{
+    border-radius: 50%;
+    width: 350px;
+    height: 380px;
+    box-shadow: 0 0 20px #03e4cd;
+    border: 5px solid #03e4cd; /* Aqua border */
+    z-index:20;
+    margin-right:30px;
+    margin-bottom:30px;
+
+   
+}
+body.dark-mode .Profile img {
+    border: 5px solid #03DAC6; /* Dark Aqua border */
+    box-shadow: 0 0 10px #03DAC6;
+}
+
+@media screen and (max-width: 920px) {
+
+    .AboutContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Profile img {
+        text-align: center;
+        margin-right: 0;
+        width:300px;
+        height: 330px;
+        order: 1; /* Ensure the image comes first */
+    }
+    .About {
+        margin-right:0;
+        margin-left:0;
+        order: 2; /* Ensure the text comes second */
+    }
+    .AboutHeader {
+        text-align: center;
+        
+    }
+    .Description {
+        text-align: center;
+    }
+    .Resume {
+        text-align: center;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .ResumeButton {
+        padding: 15px 30px; /* Padding inside the button */
+    }
+    .Description {
+        font-size: 1.1rem;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Description {
+        font-size: 1rem;
+        max-width: 300px;
+    }
+    .ResumeButton {
+        padding: 15px 20px; /* Padding inside the button */
+    }
+    .Profile img {
+        width: 250px;
+        height: 280px;
+    }
+    
+}

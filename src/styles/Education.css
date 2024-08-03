@@ -1,0 +1,91 @@
+.EducationContainer {
+    text-align: center;
+    background-color: white;
+    justify-content: center;
+    color:black;
+    min-height: 90vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding-bottom:60px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+body.dark-mode .EducationContainer {
+    background-color: #121212;
+    color:white;
+}
+
+.EducationTitle {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.EducationSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    color:rgb(99, 98, 98);
+    align-items: center;
+    padding: 0;
+}
+body.dark-mode .EducationSection {
+    color: rgb(161, 158, 158);
+}
+
+.EducationWrapper {
+    display: flex;
+    color:rgb(99, 98, 98);
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    text-decoration: none;
+}
+
+body.dark-mode .EducationWrapper {
+    color: rgb(161, 158, 158);
+}
+
+.Education {
+    border: 3px solid #03e4cd; /* Aqua border */
+    box-shadow: 0 0 10px #03e4cd;
+    max-width: 700px;
+    min-width:auto;
+    min-height:200px;
+    height:auto;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.Education:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.EducationImage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.EducationImage img {
+    width: 50px; /* Adjust size as needed */
+    margin-right: 20px;
+}
+
+.EducationImageOverlay {
+    align-items: left;
+    text-align: left;
+}
+
+.EducationImageOverlay h3 {
+    font-size: 0.8rem;
+}
+
+.Education p {
+    margin-bottom: 10px;
+}
