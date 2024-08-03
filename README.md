@@ -17,3 +17,5 @@ Bundler: Vite
 Styling: CSS (or specify if you're using a CSS framework like Tailwind, Bootstrap, etc.)
 Icons & Assets: Font Awesome, custom images, etc.
 
+## Portfolio
+[View Portfolio](https://sebastianxstephens.com/)
