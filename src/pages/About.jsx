@@ -11,12 +11,12 @@ function About() {
         </div>
         <div className="Description">
           <p>
-          I am a student at the Georgia Institute of Technology pursuing a BS in Computer Science, specializing in Artificial Intelligence and Information/Internetworks. I have experience in full stack development in many languages such as Python, Java, and JavaScript.  I enjoy projects related to my passions in Machine Learning, Data Analysis, and Economics. I am actively seeking full-time positions in software engineering and data analytics roles, where I can leverage my skills and interests in these areas.
+          I'm a Computer Science student minoring in Economics at Georgia Tech with a passion for data analytics and problem-solving. I have experience in Python object oriented programming, database management, and data visualization. My strong analytical mindset and technical expertise enable me to tackle complex challenges and create impactful solutions that drive business success. I'm currently seeking opportunities in data science, technical consulting, or software development, where I can apply my skills to uncover actionable insights and support organizational goals.
           </p>
         </div>
         <div className="Resume">
-          <a href="https://docs.google.com/document/d/17DMGZsJ1d3Rg2hfr-NKGJ813-9cHP1liVxNgK5L735A/edit?usp=sharing" target="_blank" rel="noreferrer" className='ResumeButton'>
-            Resume
+          <a href="https://www.linkedin.com/in/sebastianxstephens/" target="_blank" rel="noreferrer" className='ResumeButton'>
+            Connect
           </a>
         </div>
       </div>
